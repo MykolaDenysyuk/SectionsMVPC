@@ -61,7 +61,7 @@ extension HomePresenter: SectionsViewOutput {
     }
 }
 
-extension Home.Presenter: SectionsDatasource {
+extension HomePresenter: SectionsDatasource {
     
     func numberOfSections() -> Int {
         return sections.count

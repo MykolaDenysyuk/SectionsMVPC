@@ -14,7 +14,7 @@ class ProfileCoordinator: Coordinator {
     
     func start(with data: ProfileData, from presentingController: UIViewController) {
         let presenter = ProfilePresenter(with: self)
-        let controller = ProfileViewController()
+        let controller = ProfileViewController(datasource: presenter, eventsHandler: presenter)
         guard let navigationController = presentingController.navigationController
             else {fatalError("navigation controller is required")}
         self.rootController = controller

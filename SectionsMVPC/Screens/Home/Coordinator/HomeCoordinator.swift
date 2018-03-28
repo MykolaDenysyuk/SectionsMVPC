@@ -39,7 +39,9 @@ class HomeCoordinator: Coordinator {
 
 extension HomeCoordinator: HomeCoordinatorInput {
     func showProfile() {
-        // todo
+        guard let controller = rootController else { fatalError("root controller is required") }
+        
+        ProfileCoordinator().start(with: ProfileData(), from: controller)
     }
     
     func showSideMenu() {
