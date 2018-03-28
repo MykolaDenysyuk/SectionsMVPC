@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileDetailsCell" rowHeight="87" id="KGk-i7-Jjw" customClass="ProfileDetailsCell" customModule="SectionsMVPC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="86.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dab-gF-yuY" userLabel="Name">
+                        <rect key="frame" x="20" y="10" width="280" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A fictitious name used to identify an unknown man or body" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuM-fU-Cn7" userLabel="Bio">
+                        <rect key="frame" x="20" y="35" width="280" height="41"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Dab-gF-yuY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="69c-NF-t2f"/>
+                    <constraint firstAttribute="bottom" secondItem="nuM-fU-Cn7" secondAttribute="bottom" constant="10" id="CuS-hQ-Fi5"/>
+                    <constraint firstItem="nuM-fU-Cn7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Lzt-aS-YjF"/>
+                    <constraint firstItem="nuM-fU-Cn7" firstAttribute="top" secondItem="Dab-gF-yuY" secondAttribute="bottom" constant="1.5" id="TTX-T8-jTe"/>
+                    <constraint firstAttribute="trailing" secondItem="nuM-fU-Cn7" secondAttribute="trailing" constant="20" id="edi-B6-y6H"/>
+                    <constraint firstItem="Dab-gF-yuY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="qla-6v-VCG"/>
+                    <constraint firstAttribute="trailing" secondItem="Dab-gF-yuY" secondAttribute="trailing" constant="20" id="zPl-Ej-ro7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bioLabel" destination="nuM-fU-Cn7" id="yZ3-Kd-t3Q"/>
+                <outlet property="nameLabel" destination="Dab-gF-yuY" id="leU-8U-8De"/>
+            </connections>
+            <point key="canvasLocation" x="55" y="72.5"/>
+        </tableViewCell>
+    </objects>
+</document>
