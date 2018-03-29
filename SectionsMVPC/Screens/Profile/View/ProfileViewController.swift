@@ -11,7 +11,7 @@ import UIKit
 class ProfileViewController<Datasource, ViewOutput>: UITableViewController, TableViewContainer, SectionsViewInput, LoadingIndicatorContainer
 where
     Datasource: SectionsDatasource, Datasource.Item == Profile.Item,
-ViewOutput: SectionsViewOutput, ViewOutput.View == SectionsViewInput, ViewOutput.Event == Profile.Event {
+    ViewOutput: SectionsViewOutput, ViewOutput.View == SectionsViewInput, ViewOutput.Event == Profile.Event {
     
     // MARK: Vars
     

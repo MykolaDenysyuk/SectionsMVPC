@@ -88,6 +88,7 @@
 		6FFFD717206C269C00EB4EFD /* SectionsMVPCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsMVPCTests.swift; sourceTree = "<group>"; };
 		6FFFD719206C269C00EB4EFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FFFD71F206C29F400EB4EFD /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		A81C14F0206D29F600728B63 /* session1 (1).key */ = {isa = PBXFileReference; lastKnownFileType = file; path = "session1 (1).key"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +213,7 @@
 		6FFFD6F7206C1DD600EB4EFD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A81C14F0206D29F600728B63 /* session1 (1).key */,
 				6FE9E74C2067C1A600FCB71C /* Assets.xcassets */,
 				6FE9E74E2067C1A600FCB71C /* LaunchScreen.storyboard */,
 				6FE9E7512067C1A600FCB71C /* Info.plist */,
